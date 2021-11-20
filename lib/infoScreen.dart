@@ -41,10 +41,16 @@ class _InfoScreenState extends State<InfoScreen> {
 
   _updateInfo() {
     // Update info of people box
+    box.put('name', 'Mike');
+    box.put('country', 'United States');
+    print('Info updated in box !');
   }
 
   _deleteInfo() {
     // Delete info from people box
+    box.delete('name');
+    box.delete('country');
+    print('Info deleted from box');
   }
 
   @override
