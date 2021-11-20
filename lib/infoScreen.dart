@@ -27,10 +27,16 @@ class _InfoScreenState extends State<InfoScreen> {
 
   _addInfo() async {
     // Add info to people box
+    box.put('name', 'John');
+    box.put('country', 'Italy');
+    print('Info added to box');
   }
 
   _getInfo() {
     // Get info from people box
+    var name = box.get('name');
+    var country = box.get('country');
+    print('Info retrieved from box: $name ($country');
   }
 
   _updateInfo() {
